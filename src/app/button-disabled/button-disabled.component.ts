@@ -16,7 +16,7 @@ constructor(){
   }, 2000);
 }
 onCreateServer(){
-  this.serverCreationStatus = "Server Was Created !";
+  this.serverCreationStatus = "Server Was Created ! Name is "+this.serverName;
 }
 
 onUpdateServerName(event:Event){
