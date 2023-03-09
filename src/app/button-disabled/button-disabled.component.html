@@ -7,3 +7,7 @@
 </ng-template>
 <button (click)="onCreateServer()" class="btn btn-primary" [disabled]="!buttonStatus">Enable/Disble button</button>
 <p [innerHTML]="serverCreationStatus"></p>
+
+<p *ngFor="let server of servers">
+	{{ server }}
+</p>

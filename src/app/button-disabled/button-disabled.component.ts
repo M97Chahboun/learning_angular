@@ -10,6 +10,7 @@ export class ButtonDisabledComponent {
   serverCreationStatus = "No server created yet";
   serverName = "";
   serverCreated = false;
+  servers = [];
 
   constructor() {
     setTimeout(() => {
@@ -18,6 +19,7 @@ export class ButtonDisabledComponent {
   }
   onCreateServer() {
     this.serverCreated = true;
+    this.servers.push(this.serverName);
     this.serverCreationStatus = "Server Was Created ! Name is " + this.serverName;
   }
 
