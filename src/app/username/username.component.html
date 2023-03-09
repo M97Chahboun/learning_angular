@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)] = username>
+<p>{{ username }}</p>
+<button class="btn btn-primary" [disabled]="username.length == 0">Save</button>
+<button class="btn btn-primary" (click)="username = ''">Reset</button>
