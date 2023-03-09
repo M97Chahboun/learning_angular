@@ -1,3 +1,6 @@
+
 .warning {
-	color: red;
-}
+	padding: 20px;
+	background-color: red;
+	color: white;
+  }
