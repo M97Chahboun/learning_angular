@@ -6,20 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./button-disabled.component.css']
 })
 export class ButtonDisabledComponent {
-buttonStatus = false;
-serverCreationStatus = "No server created yet";
-serverName = "";
+  buttonStatus = false;
+  serverCreationStatus = "No server created yet";
+  serverName = "";
+  serverCreated = false;
 
-constructor(){
-  setTimeout(() => {
-    this.buttonStatus = true;
-  }, 2000);
-}
-onCreateServer(){
-  this.serverCreationStatus = "Server Was Created ! Name is "+this.serverName;
-}
+  constructor() {
+    setTimeout(() => {
+      this.buttonStatus = true;
+    }, 2000);
+  }
+  onCreateServer() {
+    this.serverCreated = true;
+    this.serverCreationStatus = "Server Was Created ! Name is " + this.serverName;
+  }
 
-onUpdateServerName(event:Event){
-this.serverName = (<HTMLInputElement>event.target).value;
-}
+  onUpdateServerName(event: Event) {
+    this.serverCreated = true;
+    this.serverName = (<HTMLInputElement>event.target).value;
+  }
 }
