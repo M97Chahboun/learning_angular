@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class ButtonDisabledComponent {
 buttonStatus = false;
 serverCreationStatus = "No server created yet";
+serverName = "";
 
 constructor(){
   setTimeout(() => {
@@ -16,5 +17,9 @@ constructor(){
 }
 onCreateServer(){
   this.serverCreationStatus = "Server Was Created !";
+}
+
+onUpdateServerName(event:Event){
+this.serverName = (<HTMLInputElement>event.target).value;
 }
 }

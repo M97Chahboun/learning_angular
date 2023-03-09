@@ -1,2 +1,5 @@
+<label>Server Name</label>
+<input type="text" (input)="onUpdateServerName($event)" class="form-control">
+<p>Server Name: {{ serverName }}</p>
 <button (click)="onCreateServer()" class="btn btn-primary" [disabled]="!buttonStatus">Enable/Disble button</button>
 <p [innerHTML]="serverCreationStatus"></p>
