@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ButtonDisabledComponent {
 buttonStatus = false;
+serverCreationStatus = "No server created yet";
+
 constructor(){
   setTimeout(() => {
     this.buttonStatus = true;
   }, 2000);
+}
+onCreateServer(){
+  this.serverCreationStatus = "Server Was Created !";
 }
 }
