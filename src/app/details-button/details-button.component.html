@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="showParagraph()">Display Detail</button>
+<p *ngIf="paragraphShowing">Password == 'tuna'</p>
+<div *ngFor="let item of items"
+[ngStyle]="{'backgroundColor': item >= 5 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text': item >= 5}"
+>{{ item }}</div>

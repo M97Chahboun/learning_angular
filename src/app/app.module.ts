@@ -7,6 +7,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { ButtonDisabledComponent } from './button-disabled/button-disabled.component';
 import { UsernameComponent } from './username/username.component';
 import { ServerComponent } from './server/server.component';
+import { DetailsButtonComponent } from './details-button/details-button.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ServerComponent } from './server/server.component';
     SuccessAlertComponent,
     ButtonDisabledComponent,
     UsernameComponent,
-    ServerComponent
+    ServerComponent,
+    DetailsButtonComponent
   ],
   imports: [
     BrowserModule,
